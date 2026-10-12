@@ -1,0 +1,696 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#090b10">
+    <meta name="description" content="Portfolio de Ramatoulaye Dia, étudiante en informatique à l'UAM. Développement logiciel, bases de données et projets numériques.">
+
+    <title>rams.dev | Ramatoulaye Dia</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/main.js" defer></script>
+</head>
+
+<body>
+
+    <!-- NAVIGATION -->
+    <header class="header">
+        <nav class="nav container" aria-label="Navigation principale">
+
+            <a href="#accueil" class="logo" aria-label="rams.dev, accueil">
+                rams<span>.dev</span>
+            </a>
+
+            <button
+                class="menu-toggle"
+                id="menu-toggle"
+                type="button"
+                aria-label="Ouvrir le menu"
+                aria-controls="nav-links"
+                aria-expanded="false">
+                <span></span>
+                <span></span>
+            </button>
+
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#accueil">Accueil</a></li>
+                <li><a href="#projets">Projets</a></li>
+                <li><a href="#apropos">À propos</a></li>
+                <li><a href="#competences">Compétences</a></li>
+                <li><a href="#contact" class="nav-contact">Me contacter ↗</a></li>
+            </ul>
+
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- SECTION ACCUEIL -->
+        <section class="hero container" id="accueil">
+
+            <div class="hero-content">
+
+                <p class="eyebrow">
+                    <span class="status-dot"></span>
+                    PORTFOLIO · L3 INFORMATIQUE
+                </p>
+
+                <h1>
+                    Je transforme<br>
+                    les idées en <span class="gradient-text">solutions.</span>
+                </h1>
+
+                <p class="hero-description">
+                    Moi, c'est <strong>Ramatoulaye Dia</strong>, étudiante en troisième
+                    année de licence en informatique à l'Université Amadou Mahtar MBOW.
+                    Je m'intéresse au développement logiciel, aux bases de données
+                    et à la conception de solutions numériques utiles.
+                </p>
+
+                <div class="hero-actions">
+                    <a href="#projets" class="btn btn-primary">
+                        Découvrir mes projets ↘
+                    </a>
+
+                    <a href="#contact" class="btn btn-secondary">
+                        Me contacter ↗
+                    </a>
+                </div>
+
+                <div class="hero-meta">
+                    <span>
+                        <span class="meta-symbol">⌘</span>
+                        Développement logiciel
+                    </span>
+
+                    <span>
+                        <span class="meta-symbol">⌁</span>
+                        Bases de données
+                    </span>
+                </div>
+
+            </div>
+
+            <!-- ILLUSTRATION DE CODE -->
+            <div class="hero-visual" aria-label="Illustration de code informatique">
+
+                <div class="code-card">
+
+                    <div class="code-topbar">
+                        <div class="window-dots">
+                            <i></i><i></i><i></i>
+                        </div>
+
+                        <span>developer.js</span>
+                        <span class="code-menu">···</span>
+                    </div>
+
+                    <div class="code-body">
+                        <p><span class="line-number">01</span> <span class="code-purple">const</span> developer = {</p>
+                        <p><span class="line-number">02</span> &nbsp; name: <span class="code-green">'Ramatoulaye'</span>,</p>
+                        <p><span class="line-number">03</span> &nbsp; field: <span class="code-green">'Software'</span>,</p>
+                        <p><span class="line-number">04</span> &nbsp; passion: <span class="code-green">'Data & AI'</span>,</p>
+                        <p><span class="line-number">05</span> &nbsp; mindset: <span class="code-green">'Build & learn'</span></p>
+                        <p><span class="line-number">06</span> };</p>
+                        <p class="code-last"><span class="line-number">07</span> <span class="code-purple">return</span> developer;</p>
+                    </div>
+
+                    <div class="code-footer">
+                        <span><span class="status-dot"></span> En recherche d'un stage</span>
+                        <span>UTF-8</span>
+                    </div>
+
+                </div>
+
+                <div class="floating-tag tag-top">&lt;/&gt; Code</div>
+                <div class="floating-tag tag-bottom">✳ Curiosité & innovation</div>
+                <div class="visual-orbit"></div>
+
+            </div>
+
+            <a class="scroll-indicator" href="#projets">
+                <span></span>
+                DÉFILER POUR EXPLORER
+            </a>
+
+        </section>
+
+        <!-- SECTION PROJETS -->
+        <section class="section container" id="projets">
+
+            <div class="section-heading">
+                <div>
+                    <p class="eyebrow">01 / RÉALISATIONS</p>
+                    <h2>Des idées, du <span class="gradient-text">code.</span></h2>
+                </div>
+
+                <p class="section-intro">
+                    Des projets universitaires et personnels qui me permettent
+                    d'apprendre, d'expérimenter et de construire des solutions concrètes.
+                </p>
+            </div>
+
+            <!-- PROJET PRINCIPAL : SALLEO -->
+            <article class="project-featured">
+
+                <div class="project-visual project-salleo">
+
+                    <div class="dashboard-window">
+
+                        <div class="dashboard-top">
+                            <span class="dashboard-brand">SALLEO<span>.</span></span>
+                            <span class="dashboard-pill">Gestion des salles</span>
+                        </div>
+
+                        <div class="dashboard-body">
+                            <p class="dashboard-caption">PLATEFORME WEB · UAM</p>
+
+                            <h3>Un planning universitaire mieux organisé.</h3>
+
+                            <div class="dashboard-stats">
+                                <div>
+                                    <span>Réservations</span>
+                                    <strong>Centralisées</strong>
+                                </div>
+
+                                <div>
+                                    <span>Conflits</span>
+                                    <strong>Détectés</strong>
+                                </div>
+                            </div>
+
+                            <div class="dashboard-row">
+                                <span>Demandes de réservation</span>
+                                <span class="available">Suivi des demandes</span>
+                            </div>
+
+                            <div class="dashboard-row">
+                                <span>Attribution des salles</span>
+                                <span class="available">Selon l'effectif</span>
+                            </div>
+
+                            <div class="dashboard-row">
+                                <span>Validation</span>
+                                <span class="available">Par les responsables</span>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="project-details">
+
+                    <div class="project-topline">
+                        <span class="project-number">PROJET 01</span>
+                        <span class="project-status">Projet phare</span>
+                    </div>
+
+                    <h3>SALLEO</h3>
+
+                    <p class="project-subtitle">
+                        Une solution de réservation et de gestion des salles universitaires
+                    </p>
+
+                    <p>
+                        SALLEO est une plateforme web conçue pour centraliser les
+                        demandes de réservation de salles à l'Université Amadou Mahtar
+                        MBOW. Elle facilite la coordination entre les étudiants,
+                        les enseignants et les responsables, tout en limitant les
+                        conflits de planning.
+                    </p>
+
+                    <div class="salleo-features">
+
+                        <div>
+                            <span class="feature-index">01</span>
+                            <div>
+                                <strong>Réservation structurée</strong>
+                                <p>Demandes, modifications et annulations de réservations.</p>
+                            </div>
+                        </div>
+
+                        <div>
+                            <span class="feature-index">02</span>
+                            <div>
+                                <strong>Gestion des accès</strong>
+                                <p>Des rôles et des autorisations adaptés aux utilisateurs.</p>
+                            </div>
+                        </div>
+
+                        <div>
+                            <span class="feature-index">03</span>
+                            <div>
+                                <strong>Contrôle des conflits</strong>
+                                <p>Vérification des disponibilités lors des demandes et validations.</p>
+                            </div>
+                        </div>
+
+                        <div>
+                            <span class="feature-index">04</span>
+                            <div>
+                                <strong>Suivi administratif</strong>
+                                <p>Validation des demandes et consultation des réservations.</p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="tech-tags">
+                        <span>HTML5</span>
+                        <span>CSS3</span>
+                        <span>JavaScript</span>
+                        <span>Node.js</span>
+                        <span>Express</span>
+                        <span>PostgreSQL</span>
+                        <span>JWT</span>
+                        <span>bcrypt</span>
+                    </div>
+
+                    <a
+                        href="https://github.com/diaramatoulaye-png/salleoet"
+                        class="text-link"
+                        target="_blank"
+                        rel="noopener noreferrer">
+                        Explorer le dépôt GitHub ↗
+                    </a>
+
+                </div>
+
+            </article>
+
+            <!-- AUTRES PROJETS -->
+            <div class="project-grid">
+
+                <article class="project-card">
+
+                    <div class="project-card-visual visual-connect">
+                        <span class="visual-icon">⌘</span>
+                        <span class="visual-label">PLATEFORME NUMÉRIQUE</span>
+
+                        <div class="connect-nodes">
+                            <i></i><i></i><i></i><i></i>
+                        </div>
+                    </div>
+
+                    <div class="project-card-content">
+                        <p class="project-number">PROJET 02</p>
+                        <h3>Senegal Connect</h3>
+
+                        <p>
+                            Projet de plateforme numérique mobilisant le développement
+                            logiciel et la gestion des données.
+                        </p>
+
+                        <div class="tech-tags">
+                            <span>Développement web</span>
+                            <span>Base de données</span>
+                        </div>
+                    </div>
+
+                </article>
+
+                <article class="project-card">
+
+                    <div class="project-card-visual visual-java">
+                        <span class="visual-icon">☕</span>
+                        <span class="visual-label">APPLICATION DESKTOP</span>
+
+                        <div class="java-window">
+                            <span>Java Swing</span>
+                            <span>MySQL</span>
+                            <span>CRUD</span>
+                        </div>
+                    </div>
+
+                    <div class="project-card-content">
+                        <p class="project-number">PROJET 03</p>
+                        <h3>Application Java & MySQL</h3>
+
+                        <p>
+                            Application de bureau avec interface graphique et
+                            connexion à une base de données relationnelle.
+                        </p>
+
+                        <div class="tech-tags">
+                            <span>Java</span>
+                            <span>Swing</span>
+                            <span>MySQL</span>
+                        </div>
+                    </div>
+
+                </article>
+
+                <article class="project-card">
+
+                    <div class="project-card-visual visual-robot">
+                        <span class="visual-icon">◈</span>
+                        <span class="visual-label">PYTHON · SIMULATION</span>
+
+                        <div class="robot-track">
+                            <span>🤖</span>
+                            <i></i><i></i><i></i>
+                        </div>
+                    </div>
+
+                    <div class="project-card-content">
+                        <p class="project-number">PROJET 04</p>
+                        <h3>Robot Nettoyeur UAM</h3>
+
+                        <p>
+                            Projet de simulation d'un robot nettoyeur réalisé
+                            avec Python et Pygame.
+                        </p>
+
+                        <div class="tech-tags">
+                            <span>Python</span>
+                            <span>Pygame</span>
+                        </div>
+                    </div>
+
+                </article>
+
+            </div>
+
+            <p class="disclaimer">
+                Les illustrations sont des maquettes visuelles et ne constituent
+                pas des captures d'écran des applications réelles.
+            </p>
+
+        </section>
+
+        <!-- SECTION À PROPOS -->
+        <section class="section about-section" id="apropos">
+
+            <div class="container about-layout">
+
+                <div class="about-marker">
+                    <div class="about-monogram">RD<span>.</span></div>
+
+                    <p>
+                        Apprendre.<br>
+                        Construire.<br>
+                        Progresser.
+                    </p>
+                </div>
+
+                <div class="about-content">
+
+                    <p class="eyebrow">02 / À PROPOS</p>
+
+                    <h2>
+                        Une développeuse en devenir,
+                        <span class="gradient-text">une ambition concrète.</span>
+                    </h2>
+
+                    <p>
+                        Je suis Ramatoulaye Dia, étudiante en troisième année de
+                        licence en informatique à l'Université Amadou Mahtar MBOW.
+                        Je m'intéresse particulièrement au développement logiciel
+                        et aux bases de données.
+                    </p>
+
+                    <p>
+                        À travers mes projets, je cherche à comprendre les besoins,
+                        structurer les solutions et transformer les idées en
+                        applications utiles. Je souhaite rejoindre une équipe
+                        où je pourrai contribuer, apprendre auprès de professionnels
+                        et progresser sur des projets réels.
+                    </p>
+
+                    <div class="about-highlights">
+                        <div>
+                            <strong>L3</strong>
+                            <span>Informatique</span>
+                        </div>
+
+                        <div>
+                            <strong>UAM</strong>
+                            <span>Formation</span>
+                        </div>
+
+                        <div>
+                            <strong>OWLA</strong>
+                            <span>Leadership</span>
+                        </div>
+                    </div>
+
+                    <p class="leadership-note">
+                        Mes engagements étudiants, notamment en tant que déléguée
+                        du département DSTI et représentante au Conseil académique,
+                        ainsi que mon parcours de leadership, contribuent à développer
+                        mon sens des responsabilités, de l'organisation et du travail
+                        en équipe.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- SECTION COMPÉTENCES -->
+        <section class="section container" id="competences">
+
+            <div class="section-heading">
+                <div>
+                    <p class="eyebrow">03 / SAVOIR-FAIRE</p>
+                    <h2>Mes outils pour <span class="gradient-text">construire.</span></h2>
+                </div>
+
+                <p class="section-intro">
+                    Des compétences techniques développées au cours de ma formation
+                    et de mes projets, que je continue à renforcer.
+                </p>
+            </div>
+
+            <div class="skills-grid">
+
+                <article class="skill-card">
+                    <div class="skill-icon">⌨</div>
+                    <h3>Développement</h3>
+                    <p>Conception d'interfaces et développement de la logique applicative.</p>
+
+                    <div class="skill-tags">
+                        <span>Python</span>
+                        <span>Java</span>
+                        <span>JavaScript</span>
+                        <span>HTML5</span>
+                        <span>CSS3</span>
+                    </div>
+                </article>
+
+                <article class="skill-card">
+                    <div class="skill-icon">▤</div>
+                    <h3>Bases de données</h3>
+                    <p>Structuration, manipulation et exploitation de données relationnelles.</p>
+
+                    <div class="skill-tags">
+                        <span>MySQL</span>
+                        <span>PostgreSQL</span>
+                        <span>SQL</span>
+                    </div>
+                </article>
+
+                <article class="skill-card">
+                    <div class="skill-icon">⌘</div>
+                    <h3>Outils & environnement</h3>
+                    <p>Environnements de développement et outils de collaboration.</p>
+
+                    <div class="skill-tags">
+                        <span>Git</span>
+                        <span>GitHub</span>
+                        <span>VS Code</span>
+                        <span>Canva</span>
+                    </div>
+                </article>
+
+                <article class="skill-card">
+                    <div class="skill-icon">✳</div>
+                    <h3>Compétences humaines</h3>
+                    <p>Organisation, communication et prise d'initiative.</p>
+
+                    <div class="skill-tags">
+                        <span>Travail d'équipe</span>
+                        <span>Leadership</span>
+                        <span>Adaptabilité</span>
+                    </div>
+                </article>
+
+            </div>
+
+            <p class="disclaimer">
+                Les technologies présentées correspondent aux outils mobilisés dans
+                mes projets et mon parcours. Mon niveau de maîtrise varie selon
+                les technologies.
+            </p>
+
+        </section>
+
+        <!-- SECTION PARCOURS -->
+        <section class="section journey-section">
+
+            <div class="container">
+
+                <p class="eyebrow">04 / PARCOURS</p>
+                <h2>Le chemin <span class="gradient-text">jusqu'ici.</span></h2>
+
+                <div class="timeline">
+
+                    <article class="timeline-item">
+                        <span class="timeline-dot"></span>
+                        <div class="timeline-date">AUJOURD'HUI</div>
+
+                        <div>
+                            <h3>Licence 3 Informatique</h3>
+                            <p>Université Amadou Mahtar MBOW · DSTI</p>
+                            <p>
+                                Formation en informatique, réalisation de projets
+                                et approfondissement de mes compétences techniques.
+                            </p>
+                        </div>
+                    </article>
+
+                    <article class="timeline-item">
+                        <span class="timeline-dot"></span>
+                        <div class="timeline-date">2023</div>
+
+                        <div>
+                            <h3>Stage en informatique</h3>
+                            <p>Ministère de la Santé et de l'Action sociale</p>
+                            <p>
+                                Maintenance des systèmes informatiques et résolution
+                                de problèmes techniques.
+                            </p>
+                        </div>
+                    </article>
+
+                    <article class="timeline-item">
+                        <span class="timeline-dot"></span>
+                        <div class="timeline-date">ENGAGEMENT</div>
+
+                        <div>
+                            <h3>Leadership & vie universitaire</h3>
+                            <p>
+                                Déléguée du département DSTI · Représentante au
+                                Conseil académique · Programme OWLA
+                            </p>
+                            <p>
+                                Engagement étudiant, représentation et développement
+                                de compétences en leadership.
+                            </p>
+                        </div>
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- SECTION CONTACT -->
+        <section class="section contact-section" id="contact">
+
+            <div class="container contact-inner">
+
+                <p class="eyebrow">05 / CONTACT</p>
+
+                <h2>
+                    Une idée, une opportunité ?
+                    <span class="gradient-text">Échangeons.</span>
+                </h2>
+
+                <p>
+                    Tu recrutes pour un stage, tu souhaites discuter d'un projet
+                    ou échanger autour du développement logiciel ?
+                    Ma boîte mail est ouverte.
+                </p>
+
+                <div class="contact-actions">
+
+                    <button
+                        type="button"
+                        class="btn btn-primary"
+                        id="email-toggle"
+                        aria-expanded="false"
+                        aria-controls="email-details">
+                        Me contacter par e-mail
+                        <span aria-hidden="true">↗</span>
+                    </button>
+
+                    <a
+                        href="documents/CV-Ramatoulaye-Dia.pdf"
+                        class="btn btn-secondary"
+                        target="_blank"
+                        rel="noopener">
+                        Consulter mon CV ↗
+                    </a>
+
+                </div>
+
+                <div class="email-details" id="email-details" hidden>
+
+                    <p>Tu peux me joindre à cette adresse :</p>
+
+                    <div class="email-copy-row">
+
+                        <a
+                            href="mailto:rahmatoulaye24@gmail.com"
+                            id="email-address">
+                            rahmatoulaye24@gmail.com
+                        </a>
+
+                        <button
+                            type="button"
+                            class="copy-email-btn"
+                            id="copy-email">
+                            Copier l'adresse
+                        </button>
+
+                    </div>
+
+                    <p
+                        class="email-feedback"
+                        id="email-feedback"
+                        aria-live="polite">
+                    </p>
+
+                </div>
+
+                <p class="contact-note">
+                    Sénégal · Développement logiciel · Recherche de stage
+                </p>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- PIED DE PAGE -->
+    <footer class="footer">
+
+        <div class="container footer-inner">
+
+            <a href="#accueil" class="logo" aria-label="Retour à l'accueil">
+                rams<span>.dev</span>
+            </a>
+
+            <p>Conçu avec curiosité et envie d'apprendre.</p>
+
+            <p>
+                © <span id="current-year"></span> Ramatoulaye Dia
+            </p>
+
+        </div>
+
+    </footer>
+
+</body>
+</html>
